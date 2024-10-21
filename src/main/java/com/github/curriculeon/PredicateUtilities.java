@@ -10,7 +10,8 @@ public class PredicateUtilities {
      * @return true if `x` is greater than `y`
      */
     public Boolean isGreaterThan(int x, int y) {
-        return null;
+        boolean result = x > y;
+        return result;
     }
 
     /**
@@ -19,7 +20,8 @@ public class PredicateUtilities {
      * @return true if `x` is less than `y`
      */
     public Boolean isLessThan(int x, int y) {
-        return null;
+        boolean result = x < y;
+        return result;
     }
 
     /**
@@ -28,7 +30,8 @@ public class PredicateUtilities {
      * @return true if `x` is greater than or equal to `y`
      */
     public Boolean isGreaterThanOrEqualTo(int x, int y) {
-        return null;
+        boolean result = x >= y;
+        return result;
     }
 
     /**
@@ -37,7 +40,8 @@ public class PredicateUtilities {
      * @return true if `x` is less than or equal to `y`
      */
     public Boolean isLessThanOrEqualTo(int x, int y) {
-        return null;
+        boolean result = x <= y;
+        return result;
     }
 
 
@@ -45,14 +49,16 @@ public class PredicateUtilities {
      * @return true
      */
     public Boolean returnTrue() {
-        return null;
+        boolean result = true;
+        return result;
     }
 
     /**
      * @return false
      */
     public Boolean returnFalse() {
-        return null;
+        boolean result = false;
+        return result;
     }
 
 }
