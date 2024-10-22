@@ -1,5 +1,8 @@
 package com.github.curriculeon;
 
+import com.sun.xml.internal.fastinfoset.util.CharArray;
+import com.sun.xml.internal.fastinfoset.util.StringArray;
+
 /**
  * Created by Leon Hunter on 6/14/17.
  */
@@ -58,7 +61,8 @@ public class StringUtilities {
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
     public Boolean compareTwoStrings(String inputValue, String comparableValue) {
-        return null;
+        Boolean result = inputValue.equals(comparableValue);
+        return result;
     }
 
     /**
@@ -66,7 +70,12 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public Character getMiddleCharacter(String inputValue) {
-        return null;
+        // put inputvalue character into a list
+        // get middle character of inputvalue
+        // whatever length is / by 2 to get the remain
+      char result = inputValue.charAt(inputValue.length() /2);
+
+        return result;
     }
 
     /**
@@ -74,7 +83,9 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public String getFirstWord(String spaceDelimitedString) {
-        return null;
+        //split string to grab first index "0"
+      String[] result = spaceDelimitedString.split(" ");
+        return result[0];
     }
 
     /**
@@ -82,7 +93,8 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public String getSecondWord(String spaceDelimitedString) {
-        return null;
+        String[] result = spaceDelimitedString.split(" ");
+        return result[1];
     }
 
     /**
@@ -90,6 +102,21 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public String reverse(String stringToReverse) {
-        return null;
+        String result= "";
+        char[] characterarray = stringToReverse.toCharArray();
+        int numberofcharacters = characterarray.length;
+        int lastindex = numberofcharacters -1;
+        int numberoftimeslooped = 0;
+        while (numberofcharacters > numberoftimeslooped){
+            int currentindex = lastindex - numberoftimeslooped;
+            char currentcharacter = characterarray[currentindex];
+            result = result + (currentcharacter);
+            numberoftimeslooped = numberoftimeslooped + 1;
+        }
+
+
+
+
+        return result;
     }
 }
