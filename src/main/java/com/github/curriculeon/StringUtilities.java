@@ -8,7 +8,8 @@ public class StringUtilities {
      * @return `Hello World` as a string
      */
     public String getHelloWorld() {
-        return null;
+        String result = "Hello World";
+        return result;
     }
 
     /**
@@ -17,7 +18,8 @@ public class StringUtilities {
      * @return the concatenation of two strings, `firstSegment`, and `secondSegment`
      */
     public String concatenation(String firstSegment, String secondSegment) {
-        return null;
+        String result = firstSegment + secondSegment;
+        return result;
     }
 
     /**
@@ -26,7 +28,8 @@ public class StringUtilities {
      * @return the concatenation of an integer, `firstSegment`, and a String, `secondSegment`
      */
     public String concatenation(int firstSegment, String secondSegment) {
-        return null;
+
+        return firstSegment + secondSegment;
     }
 
     /**
@@ -34,7 +37,8 @@ public class StringUtilities {
      * @return the first 3 characters of `input`
      */
     public String getPrefix(String input) {
-        return null;
+        String result  = input.substring(0,3);
+        return result;
     }
 
     /**
@@ -42,7 +46,10 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public String getSuffix(String input) {
-        return null;
+        int lastindex = input.length();
+        int startindex = lastindex - 3;
+        String result = input.substring(startindex, lastindex);
+        return result;
     }
 
     /**
